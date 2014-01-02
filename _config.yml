@@ -1,0 +1,4 @@
+name: Drupalcon Prague 2013
+markdown: redcarpet
+pygments: true
+permalink: /:year/:categories/:title/

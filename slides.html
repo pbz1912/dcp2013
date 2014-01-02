@@ -1,0 +1,17 @@
+---
+layout: slides-page
+title: Drupalcon Prague 2013
+---
+
+{% for post in site.posts reversed %}
+  {% if post.layout == "slide" %}
+    <article
+        class="step {{ post.classes }}"
+        data-x="{{ post.xpos }}"
+        data-y="{{ post.ypos }}"
+        >
+      {{ post.content }}
+    </article>
+    <!-- {{ post }} -->
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!-- syntax highlighting CSS -->
+  <link rel="stylesheet" href="/css/syntax.css">
+
+  <!-- slideshow CSS -->
+  <link rel="stylesheet" href="/css/impress-demo.css">
+
+</head>
+<body class="impress-not-supported">
+  <!--
+    For example this fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+  <div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+  </div>
+  <div id="impress">
+    <!-- The slides go in here. -->
+    {{ content }}
+  </div>
+  <!-- impress.js presentation enabling -->
+  <script src="js/impress.js"></script>
+  <script>impress().init();</script>
+</body>
+</html>

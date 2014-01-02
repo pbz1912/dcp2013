@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Test code highlighting for php"
+date:   2013-09-18 22:17:17
+categories: day-5
+permalink: /laura-test/
+---
+
+Php code:
+
+```php
+<?php
+/**
+ * Implements hook_field_group_formatter_info().
+ */
+function solas_et_promo_boxes_field_group_formatter_info() {
+  return array(
+    'display' => array(
+      'boxes' => array(
+        'label' => t('Boxes'),
+        'description' => t('This fieldgroup renders the BC boxes markup.'),
+        'format_types' => array('boxes'),
+        'default_formatter' => 'boxes',
+      ),
+    ),
+  );
+}
+$add['#prefix'] = '<section class="bc-boxes"><div id="container" class="bc-deck"><ul>';
+$add['#suffix'] = '</ul></div></section>';
+```
